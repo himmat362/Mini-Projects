@@ -4,7 +4,7 @@ import random as r
 
 def random(subset,_final_list_):
     #chosing a new subset randomly from the given set 
-    new_list=r.sample(subset, k=range(3,6)
+    new_list=r.sample(subset, k=r.randint(3,6))
     #sorting the new_list
     new_list=sorted(new_list)
     if check_sum(new_list)==True:
