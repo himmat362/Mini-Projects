@@ -1,2 +1,1 @@
-# Subset_Selection
-Subset selection using random approach
+#Well, these are some of my Mini-Projects. Not much but something.
