@@ -1,1 +1,1 @@
-#Well, these are some of my Mini-Projects. Not much, but still something.
+#Well, these are some of my mini-mini projects. Not much, but still something.
