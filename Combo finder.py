@@ -3,14 +3,19 @@ import random as r
 
 
 def combo_finder(Listed,Lower_bound,Upper_bound,already_listed):
+    #choosing random combination of values
     new_Listed=r.sample(list(Listed.keys()),k=r.randint(2, len(Listed)-1))
+    #sorting of the chosen list
     list(new_Listed)
+    #check the sum of list
     if check_sum(Listed,new_Listed,Lower_bound,Upper_bound)==True:
+	#appending the list
         already_listed.add(tuple(new_Listed))
         return combo_finder(Listed, Lower_bound, Upper_bound, already_listed)
 
 
 def check_sum(Listed,new_Listed,Lower_bound,Upper_bound):
+    #sum of the values in chosen list
     sum1 = sum([ Listed[i] for i in new_Listed])
     if sum1>=Lower_bound and sum1<=Upper_bound:
         return True
