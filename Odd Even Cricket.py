@@ -90,10 +90,12 @@ class odd_even():
         ->If number entered by you and opponent is same, the player batting is declared OUT.
         ->All the Best!!!
         \n'''
+        print(rule)
 
 
 user=odd_even()
 #calling the class in user object
+user.rule()
 choice=input('Heads or Tails->')
 toss=r.randint(0, 1)
 if toss==1:
